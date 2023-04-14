@@ -1,9 +1,12 @@
 # output function  print()
-# print("hello world")
 ```
+print("hello world")
+```
+# + 
 print("Hellp"+"World" )
 print("Hellp"+" World" )
 print("Hellp"+ " "+"World" )
+# Antisense character and line break
 print("hello world!\nHello world!")   # \反义符 \n意为换行
 ```
 # input function input()
