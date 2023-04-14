@@ -52,7 +52,9 @@ a -= 1 # a = a -1
 a *=2 # a = a X 2
 ```
 ## 2.4 f-string, when using print function, no need to transfer every variables into string  
+```
 score =0 
 height = 1.8
 isWinning = True 
 print(f"your score is {score}, your height is {height}, you are winning is {isWinning}")
+```
