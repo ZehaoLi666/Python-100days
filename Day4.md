@@ -1,6 +1,6 @@
 # 1.0 random dunction 
 [Askpython-random methods](https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences)
-## 1.1 random.random()
+## 1.1 random.randint()
 ```
 import random
 a = random.randint(1,10)     # 随机生成整数
