@@ -17,6 +17,7 @@ print("Hello " + input("what is your name?")  # ctrl + / 可以自动添加注�
 name = input("What is your name?")
 ```
 # len() function 
+number of character in a string or number of items in a list
 ```
 print(len(name))                             # len()  output the length od a string  
 ```
