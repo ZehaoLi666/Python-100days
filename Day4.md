@@ -1,5 +1,5 @@
 # 1.0 random dunction 
-[Askpython](https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences)
+[Askpython-random methods](https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences)
 ## 1.1 random.random()
 ```
 import random
