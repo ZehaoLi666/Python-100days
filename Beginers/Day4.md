@@ -191,6 +191,12 @@ scissors = '''
 '''
 game_images = [rock,paper,scissors]                            # take the strings into a list 
 your_choice=int(input("What is your choice? 0, 1 or 2 ? "))
+
+if your_choice == 0 or your_choice == 1 or your_choice == 2:
+    print("You: "+ game_images[your_choice])
+else: 
+    pass 
+    
 import random
 computer_choice= random.randint(0,2)
 print("Computer: " + game_images[computer_choice] )
