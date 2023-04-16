@@ -89,4 +89,72 @@ map[row_number - 1][column_number -1] = 'X'
 print(f"{row1}\n{row2}\n{row3}")
 ```
 # 4.0 Project
+Make a rock, paper, scissors game. 
 
+Inside the `main.py` file, you'll find the ASCII art for the hand signals already saved to a corresponding variable: `rock`, `paper`, and `scissors`. This will make it easy to print them out to the console. 
+
+Start the game by asking the player:
+
+"What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."*
+
+From there you will need to figure out: 
+* How you will store the user's input.
+* How you will generate a random choice for the computer.
+* How you will compare the user's and the computer's choice to determine the winner (or a draw).
+* And also how you will give feedback to the player. 
+```
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+your_choice=int(input("What is your choice? 0, 1 or 2 ? "))
+import random
+computer_choice= random.randint(0,2)
+if your_choice == 0:  
+    if computer_choice == 0 : 
+        print("You: " + rock + "\n" + "Computer: " + rock + "\n Result: draw")
+    if computer_choice == 1 : 
+        print("You: " + rock + "\n" + "Computer: " + paper + "\n Result: You lose")
+    if computer_choice == 2 : 
+        print("You: " + rock + "\n" + "Computer: " + scissors + "\n Result: You win")
+
+elif your_choice == 1: 
+    if computer_choice == 0 : 
+        print("You: " + paper  + "\n" + "Computer: " + rock + "\n Result: You win")
+    if computer_choice == 1 : 
+        print("You: " + paper  + "\n" + "Computer: " + paper + "\n Result: draw")
+    if computer_choice == 2 : 
+        print("You: " + paper  + "\n" + "Computer: " + scissors + "\n Result: You lose")
+else: 
+    if computer_choice == 0 : 
+        print("You: " + scissors  + "\n" + "Computer: " + rock + "\n Result: You lose")
+    if computer_choice == 1 : 
+        print("You: " + scissors  + "\n" + "Computer: " + paper + "\n Result: You win")
+    if computer_choice == 2 : 
+        print("You: " + scissors  + "\n" + "Computer: " + scissors + "\n Result: draw")
+
+
+```
