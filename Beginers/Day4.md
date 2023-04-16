@@ -148,13 +148,14 @@ elif your_choice == 1:
         print("You: " + paper  + "\n" + "Computer: " + paper + "\n Result: draw")
     if computer_choice == 2 : 
         print("You: " + paper  + "\n" + "Computer: " + scissors + "\n Result: You lose")
-else: 
+elif your_choice == 2: 
     if computer_choice == 0 : 
         print("You: " + scissors  + "\n" + "Computer: " + rock + "\n Result: You lose")
     if computer_choice == 1 : 
         print("You: " + scissors  + "\n" + "Computer: " + paper + "\n Result: You win")
     if computer_choice == 2 : 
         print("You: " + scissors  + "\n" + "Computer: " + scissors + "\n Result: draw")
-
+else: 
+    print("You inout wrong number, you lose!")
 
 ```
