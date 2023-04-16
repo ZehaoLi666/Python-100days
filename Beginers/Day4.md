@@ -102,6 +102,7 @@ From there you will need to figure out:
 * How you will generate a random choice for the computer.
 * How you will compare the user's and the computer's choice to determine the winner (or a draw).
 * And also how you will give feedback to the player. 
+## Method1
 ```
 rock = '''
     _______
@@ -158,4 +159,51 @@ elif your_choice == 2:
 else: 
     print("You inout wrong number, you lose!")
 
+```
+## Method2 
+Actually, this question only have several possible situtations, we can list all situtations, but it is stupid. If we meet a complicated question next time, we can't list all situations. Better method is to use logic operators to list all situations.
+```
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+game_images = [rock,paper,scissors]                            # take the strings into a list 
+your_choice=int(input("What is your choice? 0, 1 or 2 ? "))
+import random
+computer_choice= random.randint(0,2)
+print("Computer: " + game_images[computer_choice] )
+if your_choice >= 3 or your_choice <0 : 
+    print ("You inout wrong number, you lose!")
+elif your_choice == 0 and computer_choice == 2 : 
+    print("You win!")
+elif your_choice == 2 and computer_choice == 0 : 
+    print("You lose!")
+elif your_choice >  computer_choice :
+    print("You win!")
+elif your_choice <  computer_choice :
+    print("You lose!")
+elif your_choice ==  computer_choice :
+    print("Draw")                                                 # It is not necessary to use else 
 ```
