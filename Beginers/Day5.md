@@ -69,7 +69,7 @@ for number in range(1,101,2):
         even_number += number 
 print(even_number)
 ```
-## exercise3: 
+## exercise2: 
 ```
 for number in range(1,101):
     if number % 3 == 0 and number % 5 == 0:
