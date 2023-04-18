@@ -115,8 +115,8 @@ for i in range(0,nr_numbers):          # produce numbers randomly
  
 print(code1)
 ```
-Hard Level - Order of characters randomised:
-e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+Hard Level - Order of characters randomised: 
+e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P 
 __code2.append()__, __random.choice()__ 
 ```
 total_number= nr_letters + nr_symbols + nr_numbers
