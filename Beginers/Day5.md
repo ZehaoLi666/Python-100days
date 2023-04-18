@@ -1,4 +1,4 @@
-# for loop 
+# 1. for loop 
 for in loop usually could be used in list data 
 ```
 for item in range: 
@@ -47,7 +47,7 @@ print(f"The highest score in the class is: {highest_score}")
 print(max(student_scores))
 print(min(student_scores))
 ```
-# range()
+# 2. range()
 # instead of looping in a list, we can decide a range to loop 
 ```
 for number in range(1，11,3)：  # 1-10, step=3
@@ -81,3 +81,52 @@ for number in range(1,101):
     else: 
         print(number)
   ```
+# 3. Project randomly produce passcode
+```
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+print("Welcome to the PyPassword Generator!")
+nr_letters= int(input("How many letters would you like in your password?\n")) 
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
+```
+
+Eazy Level - Order not randomised:
+e.g. 4 letter, 2 symbol, 2 number = JduE&!91
+```
+code1=""
+for i in range(0,nr_letters):             # produce letters randomly
+  number_name=random.randint(0,len(letters)-1)     
+  i=letters[number_name]
+  code1 += i
+  
+for i in range(0,nr_symbols):            # produce symbols randomly
+    number_name=random.randint(0,len(numbers)-1)
+    i=numbers[number_name]
+    code1 += i
+  
+for i in range(0,nr_numbers):          # produce numbers randomly
+  number_name=random.randint(0,len(symbols)-1)
+  i=symbols[number_name]
+  code1 += i 
+ 
+print(code1)
+```
+Hard Level - Order of characters randomised:
+e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+```
+total_number= nr_letters + nr_symbols + nr_numbers
+source = [letters,numbers,symbols]          # nested list,for selecting one data type from letters, symbols and numbers firstly
+code2=""
+for i in range(0,total_number):
+    number_source=random.randint(0,2)       # randomly select one data type from letters, symbols and numbers firstly (for random.randint(1,10), the range is [1,10], but for a list that has 10 items, the index range is [0,9] )
+    name_source=source[number_source]       # randomly select one item under the selected data type 
+    number_name=random.randint(0,len(name_source)-1)     
+    i=name_source[number_name]
+    code2 += i
+
+print(code2)
+```     
