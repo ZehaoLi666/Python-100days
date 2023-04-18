@@ -117,7 +117,7 @@ print(code1)
 ```
 Hard Level - Order of characters randomised:
 e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-_code2.append()_, _random.choice()_ 
+__code2.append()__, __random.choice()__ 
 ```
 total_number= nr_letters + nr_symbols + nr_numbers
 source = [letters,numbers,symbols]          # nested list,for selecting one data type from letters, symbols and numbers firstly
