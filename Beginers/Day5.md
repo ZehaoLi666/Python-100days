@@ -124,9 +124,9 @@ code2=""
 for i in range(0,total_number):
     number_source=random.randint(0,2)       # randomly select one data type from letters, symbols and numbers firstly (for random.randint(1,10), the range is [1,10], but for a list that has 10 items, the index range is [0,9] )
     name_source=source[number_source]       # randomly select one item under the selected data type 
-    number_name=random.randint(0,len(name_source)-1)      # or random.choice(name_source) **random.choice()** randomly select item from a list 
+    number_name=random.randint(0,len(name_source)-1)      # or random.choice(name_source) _random.choice()_ randomly select item from a list 
     i=name_source[number_name]
-    code2 += i                              # or **code2.append(i)**
+    code2 += i                              # or _code2.append(i)_
 
 print(code2)
 ```     
