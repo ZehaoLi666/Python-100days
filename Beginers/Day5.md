@@ -131,3 +131,7 @@ for i in range(0,total_number):
 
 print(code2)
 ```     
+Way2 __random.shuffle()__
+```
+print(random.shuffle(code1))
+```
