@@ -73,5 +73,5 @@ while not at_goal():
 # 4. Difference between for in loop and while loop 
 * for in loop: to run based on finite times that you know 
 * while loop: to run based on condition, so you don't know how many times it will run 
-** If you want to iterate a list and you want to do something to each item in the list, use for in loop **
-** If you only want to repeat some functions until it meet a condition and you don't care about which item you are iterating(do something for each item), use while loop. Be careful of it, because it may run forever, if it doesn't meet the condition you want.  **
+**If you want to iterate a list and you want to do something to each item in the list, use for in loop.**
+**If you only want to repeat some functions until it meet a condition and you don't care about which item you are iterating(do something for each item), use while loop. Be careful of it, because it may run forever, if it doesn't meet the condition you want.**
