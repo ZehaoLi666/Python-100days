@@ -17,7 +17,7 @@ Paraments are the name of the data.
        do function2 with name2
        do function3 with name3
 
-   my_function2(name1=a,name2=b,names3=b)  # Associate specfic argument to specific parament `
+   my_function2(name1=a,name2=b,names3=b)  # Associate specfic argument to specific parament`
 
 # Practice 
 ## Practice1 
