@@ -10,7 +10,7 @@ def my_function(a,b,c)
          do function2 with b
          do function3 with c
 
-     my_function(1,2,3) # The variables you input will be executed in order 
+my_function(1,2,3) # The variables you input will be executed in order 
 ```
 
 ### 2. Keyword Argument
@@ -21,7 +21,7 @@ def my_function2(name1,name2,names3)
      do function2 with name2
      do function3 with name3
 
-   my_function2(name1=a,name2=b,names3=b)  # Associate specfic argument to specific parament
+my_function2(name1=a,name2=b,names3=b)  # Associate specfic argument to specific parament
 ```
 
 # Practice 
@@ -30,6 +30,22 @@ def my_function2(name1,name2,names3)
 import math 
 a = 2.1455
 b = math.ceil(a)  # b =3, 取a的上限
+```
+## Practice2
+```
+#Write your code below this line 👇
+def prime_checker(number):
+    rest=[]
+    for i in range(1 , number):
+        if number % i == 0 : 
+            rest.append(i) 
+    if len(rest) > 2 : 
+        print("It's not a prime number.")
+    else : 
+        print("It's a prime number.")
+
+n = int(input("Check this number: "))
+prime_checker(number=n)
 ```
 
  
