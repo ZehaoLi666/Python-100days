@@ -14,10 +14,10 @@ Paraments are the name of the data.
 
 ### 2. Keyword Argument
   `def my_function2(name1,name2,names3)
-       name1 = a, name2 = b, name3 = c,
-       do function1 with name1
-       do function2 with name2
-       do function3 with name3
+     name1 = a, name2 = b, name3 = c,
+     do function1 with name1
+     do function2 with name2
+     do function3 with name3
 
    my_function2(name1=a,name2=b,names3=b)  # Associate specfic argument to specific parament
    `
