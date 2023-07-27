@@ -39,12 +39,12 @@ But 4 is not a prime number because you can divide it by 1, 2 or 4.
 
 ```
 def prime_checker(number):
-    rest=[]
+    rest=[]                                    # or is_prime = True                     
     for i in range(1 , number):
         if number % i == 0 : 
-            rest.append(i) 
+            rest.append(i)                     # is_prime = False
     if len(rest) > 2 : 
-        print("It's not a prime number.")
+        print("It's not a prime number.")     
     else : 
         print("It's a prime number.")
 
