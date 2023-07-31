@@ -53,8 +53,11 @@ prime_checker(number=n)
 ```
 
 ## Practice3 
+
 if char is str:                                      判断 char是否为字符串， or if char in alphabet
+
 position = alphabet.index(char)                      查看一个元素在列表中的索引位置
+
 ```
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
