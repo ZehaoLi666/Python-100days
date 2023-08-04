@@ -11,10 +11,11 @@ Note:use `" "` for keys and Values
 dictionary["key"]
 
 ### add item to dictionary
-`dictionary["new_key_name"] = "New_value"`
+dictionary: `dictionary["new_key_name"] = "New_value"`
    
 string: `"string1" + "string2"`
    
 list: `list.append()`
+
 ###
 
