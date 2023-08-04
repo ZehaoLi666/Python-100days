@@ -20,6 +20,15 @@ list: `list.append()`
 ### wipe/create a dictionary
 `dictionary={}`
 
+### Nest list and dictionary
+```
+{
+   "Key1":[list],
+   "Key2":{key2_2:"Value"}  
+}
+```
+
+
 # Practice 1 
 Write a program that converts their scores to grades.
 ```
