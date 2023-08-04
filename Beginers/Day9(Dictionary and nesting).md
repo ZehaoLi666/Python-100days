@@ -17,5 +17,7 @@ string: `"string1" + "string2"`
    
 list: `list.append()`
 
-###
+### wipe/create a dictionary
+`dictionary={}`
+
 
