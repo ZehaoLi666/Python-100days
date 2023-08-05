@@ -114,7 +114,8 @@ while game_status == True :
   elif Over == "N":
     game_status = False
 
-max_name=""
+# we can make the below as a function and call the function in the while loop.
+max_name=""                    
 max_price=0
 for names in dictionary:
   price = int(dictionary[names])
