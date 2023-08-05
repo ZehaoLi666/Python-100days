@@ -92,3 +92,34 @@ add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
 print(travel_log)
 
 ```
+### Practice3
+```
+from replit import clear
+#HINT: You can call clear() to clear the output in the console.
+from art import logo 
+print(logo)
+
+game_status = True 
+
+dictionary={}
+
+while game_status == True :
+  names = input("Name?")
+  prices = input("Price?")
+  dictionary[names] = prices
+  Over = input("anyone alse?")
+  if Over == "Y":
+    clear()
+  elif Over == "N":
+    game_status = False
+
+max_name=""
+max_price=0
+for names in dictionary:
+  price = int(dictionary[names])
+  if max_price < price:
+    max_price = price
+    max_name=names
+
+print(f'the winner is {max_name} with {max_price}$.')
+```
