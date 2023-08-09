@@ -25,6 +25,9 @@ to add some explantion of the function you write
  use "```" to explain  
 
 # Practice
+
+### recursion 
+reuse the function at the end of the same function, to repeat running the function
  
 ```
 from replit import clear
@@ -69,7 +72,7 @@ def calculator():
     else:
       should_continue = False
       clear()
-      calculator()
+      calculator()       # repeat calling calculator()         
 
 calculator()
 
