@@ -22,7 +22,7 @@ function2(A):
 
 to add some explantion of the function you write
 
-```    explation  
+ use "```" to explain  
 
 # Practice
  
