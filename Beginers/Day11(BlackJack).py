@@ -1,4 +1,4 @@
-# get two random cards
+y# get two random cards
 import random 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 dealer_number1 = int(random.choice(cards))
