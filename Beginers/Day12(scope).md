@@ -18,4 +18,4 @@ def add():
   print(variable)
 ```
 
-if you want to use the global variable in the add() function, use `global` to import global variable in the function.
+If you want to use the global variable in the add() function, use `global` to import global variable in the function.
