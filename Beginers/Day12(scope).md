@@ -19,3 +19,14 @@ def add():
 ```
 
 If you want to use the global variable in the add() function, use `global` to import global variable in the function.
+### Don't try to modify the global variable in a local function.
+So what if you want to use global variable in the local function? use `return`
+```
+variable =1
+
+def add():
+  
+  return variable + 1
+  print(variable)
+```
+
