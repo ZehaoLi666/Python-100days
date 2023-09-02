@@ -29,4 +29,4 @@ def add():
   return variable + 1
   print(variable)
 ```
-
+### Set up Global variables as upper cases and constant value that you don't want to change in your whole script.
