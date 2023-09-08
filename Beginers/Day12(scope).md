@@ -36,7 +36,7 @@ def add():
 from random import randint
 from art import logo
 
-EASY_LEVEL_TURNS = 10
+EASY_LEVEL_TURNS = 10           # use upper case to set up global variable
 HARD_LEVEL_TURNS = 5
 
 #Function to check user's guess against actual answer.
@@ -44,7 +44,7 @@ def check_answer(guess, answer, turns):
   """checks answer against guess. Returns the number of turns remaining."""
   if guess > answer:
     print("Too high.")
-    return turns - 1
+    return turns - 1            # use return to use global variable in functions 
   elif guess < answer:
     print("Too low.")
     return turns - 1
