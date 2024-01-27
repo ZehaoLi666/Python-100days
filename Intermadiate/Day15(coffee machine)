@@ -1,0 +1,15 @@
+1. In a function, what is "returned", what is the output of this function 
+And this value can be given to a variable.
+
+def process_coins():
+    """Returns the total calculated from coins inserted."""
+    print("Please insert coins.")
+    total = int(input("how many quarters?: ")) * 0.25
+    total += int(input("how many dimes?: ")) * 0.1
+    total += int(input("how many nickles?: ")) * 0.05
+    total += int(input("how many pennies?: ")) * 0.01
+    return total
+
+a = precess_coins()
+
+2. A function can also return a True or False value. 
